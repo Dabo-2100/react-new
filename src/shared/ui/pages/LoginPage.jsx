@@ -7,6 +7,7 @@ export default function LoginPage() {
         "flex flex-col gap-3 py-4 px-5 rounded-lg shadow border",
         "dark:bg-black/50"
     )
+
     const validationSchema = Yup.object({
         email: Yup.string().email("Invalid email").required("Email is Required"),
         password: Yup.string().required("Password is Required"),
